@@ -27,8 +27,8 @@ class Form extends Component {
   }
 
   handleChange(event) {
-    const itemType = event.target.name
-    const item = event.target.value
+    const itemType  = event.target.name
+    const item      = event.target.value
 
     !this.state[`${itemType}`].includes(item) ?
       this.setState({
